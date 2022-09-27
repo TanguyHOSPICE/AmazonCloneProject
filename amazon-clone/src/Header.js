@@ -1,21 +1,25 @@
 import React from 'react';
 import './Header.css';
+// import SearchIcon from '@mui/icons-material/icon/Search';
 
 function Header() {
 	return (
-		<div>
-			<div className="header">
+		<div className="header__Components">
+			<div className="header__LogoContainer">
 				<img className="header__logo" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon logo" />
+				<span className="header__optionLineTwo">.fr</span>
 			</div>
-			<div className="header__localisation">
-				<span className="header__optionLineOne">Bonjour</span>
-				{/* logo */}
-				<span className="header__optionLineTwo">Entrez votre adresse</span>
+			<div className="header__localisationContainer">
+				<img className="header__locatorLogo" src="https://pngimg.com/uploads/gps/gps_PNG60.png" alt="location logo" />
+				<div className="header__option">
+					<span className="header__optionLineOne">Bonjour</span>
+					<span className="header__optionLineTwo">Entrez votre adresse</span>
+				</div>
 			</div>
 			<div className="header__search">
 				{/* list. */}
 				<input type="text" className="header__searchInput" />
-				{/* logo */}
+				{/* <SearchIcon /> */}
 			</div>
 			<div className="header__nav">
 				<div className="header__option">

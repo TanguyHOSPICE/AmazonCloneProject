@@ -1,4 +1,9 @@
-.header {
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.header__Components {
 	height: 60px;
 	display: flex;
 	align-items: center;
@@ -7,16 +12,68 @@
 	top: 0;
 	z-index: 100;
 }
+/* *****HEADER LOGO***** */
+.header__LogoContainer {
+	width: 127px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 1px;
+}
 
 .header__logo {
 	width: 100px;
 	object-fit: contain; /*keep aspect ratio*/
-	margin: 0px 20px;
+	margin-left: 10px;
 	margin-top: 18px;
 }
-
-.header__localisation {
-	width: 100px;
+/* *****HEADER LOCATOR***** */
+.header__localisationContainer {
+	width: 169px;
+	height: 50px;
 	display: flex;
-	/* color: white; */
+	align-items: center;
+	color: white;
+	padding: 9px;
+	margin: 0px 5px;
 }
+
+.header__locatorLogo {
+	width: 15px;
+	height: 18px;
+	margin-top: 8px;
+	object-fit: contain;
+	color: white;
+}
+/* *****HEADER SEARCH***** */
+.header__search {
+	display: flex;
+	flex: 1;
+}
+
+.header__searchInput {
+	width: 100%;
+}
+/* *****HEADER NAV***** */
+.header__nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.header__option {
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.header__optionLineOne {
+	font-size: 0.75rem;
+}
+
+.header__optionLineTwo {
+	font-size: 0.875rem;
+	font-weight: 800;
+	color: white;
+}
+/* ********** */
