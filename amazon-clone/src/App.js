@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import Header from './Header';
+import NavBar from './Components/NavBar/Navigation';
+// import Header from './Header';
 
 function App() {
 	return (
 		<div className="app">
-			<Header />
-			{/* Home */}
+			<NavBar />
+			{/* IMRC//CCC:Create directly the component */}
 		</div>
 	);
 }
