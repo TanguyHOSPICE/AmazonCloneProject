@@ -47,6 +47,23 @@ class NavBar extends Component {
 						<div className="navbar__searchIcon"></div>
 					</div>
 				</div>
+				<div className="navbar__options">
+					<div className="navbar__itemsOption navbar__signInOption">
+						<span className="navbar__optionLineOne">Bonjour,Identifiez-vous</span>
+						<span className="navbar__optionLineTwo">Compte et listes</span>
+					</div>
+					<div className="navbar__itemsOption navbar__returnsOption">
+						<span className="navbar__optionLineOne">Retours</span>
+						<span className="navbar__optionLineTwo">et commandes</span>
+					</div>
+					<div className="navbar__cartOption">
+						<div className="navbar__itemsOption navbar__optionLineOne">
+							<span className="cart__itemCount">0</span>
+							<div className="navbar__cartIcon"></div>
+						</div>
+						<span className="navbar__optionLineTwo">Panier</span>
+					</div>
+				</div>
 			</div>
 		);
 	}

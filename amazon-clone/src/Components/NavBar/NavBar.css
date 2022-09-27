@@ -65,3 +65,43 @@ select {
 	border-radius: 5px 0 0 5px;
 	text-align-last: center;
 }
+
+.navbar__options {
+	color: white;
+	display: flex;
+	justify-content: flex-start;
+	text-align: center;
+}
+
+.navbar__itemsOption {
+	display: flex;
+	flex-direction: column;
+}
+
+.cart__itemCount {
+	color: #f08804;
+	font-weight: 700;
+	font-style: 16px;
+}
+
+.navbar__cartIcon {
+	background: url('https://ik.imagekit.io/amazon9876/amazon-image/amazon-image/sprite_350x_ZbMRQcQKu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664275312426')
+		no-repeat -217px -336px;
+	width: 43px;
+	height: 30px;
+}
+
+.navbar__cartOption {
+	display: flex;
+	align-items: center;
+}
+
+.navbar__optionLineOne {
+	font-style: 12px;
+}
+
+.navbar__optionLineTwo {
+	font-style: 14px;
+	font-weight: 700;
+	line-height: 15px;
+}
