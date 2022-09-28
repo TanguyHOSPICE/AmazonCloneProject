@@ -10,10 +10,16 @@ class NavBar extends Component {
 	render() {
 		return (
 			<div className="navbar__component">
-				<div className="navbar__logo"></div>
+				<div className="navbar__logoComponent">
+					<div className="navbar__logo"></div>
+					<div className="navbar__country">.fr</div>
+				</div>
 				<div className="navbar__locator">
 					<div className="navbar__locatorImg"></div>
-					<div className="navbar__location">Country</div>
+					<div className="navbar__location">
+						<span className="navbar__optionLineOne">Bonjour</span>
+						<span className="navbar__optionLineTwo">Entrez votre adresse</span>
+					</div>
 				</div>
 				<div className="navbar__searchComponent">
 					<div>

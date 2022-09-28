@@ -5,23 +5,41 @@
 	display: flex;
 }
 
+.navbar__logoComponent {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 1px 8px 0 6px;
+}
+
 .navbar__logo {
 	background: url('https://ik.imagekit.io/amazon9876/amazon-image/amazon-image/sprite_350x_ZbMRQcQKu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664275312426')
 		no-repeat -9px -50px;
 	width: 98px;
 	height: 31px;
-	margin: 18px;
+	margin: 18px 0 18px;
+}
+
+.navbar__country {
+	color: white;
+	font-weight: 600;
+	margin: 6px 0 18px;
 }
 
 .navbar__locator {
 	display: flex;
+	align-items: center;
 	margin: 20px 0px;
+	padding: 0 9px;
 }
 
 .navbar__location {
 	color: white;
-	font-weight: bold;
-	margin-left: 5px;
+	margin: 0 2px 5px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
 }
 
 .navbar__locatorImg {
@@ -29,6 +47,7 @@
 		no-repeat -70px -305px;
 	width: 19px;
 	height: 22px;
+	margin-top: 8px;
 }
 
 .navbar__searchComponent {
@@ -76,6 +95,7 @@ select {
 .navbar__itemsOption {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 }
 
 .cart__itemCount {
@@ -98,6 +118,7 @@ select {
 
 .navbar__optionLineOne {
 	font-style: 12px;
+	font-weight: 200;
 }
 
 .navbar__optionLineTwo {
