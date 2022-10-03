@@ -21,7 +21,6 @@
 
 .header__amazon {
 	display: flex;
-	width: 100%;
 	align-items: center;
 	margin: 0px 20px;
 }
@@ -39,9 +38,9 @@
 }
 
 .header__localisation {
-	width: 100%;
 	display: flex;
 	align-items: center;
+	margin-right: 35px;
 }
 
 .header__locator {
@@ -68,18 +67,27 @@
 	flex: 1;
 }
 
+.header__search > div {
+	width: 178px;
+}
+
 #searchDropdownBox {
 	background-color: #f3f3f3;
 	text-align: center;
-	height: 40px;
-	width: 227px;
+	height: 35px;
+	width: 100%;
 	border-radius: 5px 0 0px 5px;
 	color: #785555;
 	line-height: 35px;
 }
 
+.header__inputSearch {
+	width: 361px;
+}
+
 .header__searchIcon {
 	padding: 5px;
-	height: 22px !important;
-	background-color: #cd9042;
+	height: 45px;
+	background-color: #febd69;
+	border-radius: 0 5px 5px 0;
 }
