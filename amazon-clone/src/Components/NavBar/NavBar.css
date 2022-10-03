@@ -5,6 +5,7 @@
 	display: flex;
 }
 
+/* *****LOGO***** */
 .navbar__logoComponent {
 	display: flex;
 	align-items: center;
@@ -26,6 +27,7 @@
 	margin: 6px 0 18px;
 }
 
+/* *****LOCATION***** */
 .navbar__locator {
 	display: flex;
 	align-items: center;
@@ -40,6 +42,7 @@
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
+	padding-left: 2px;
 }
 
 .navbar__locatorImg {
@@ -48,10 +51,13 @@
 	width: 19px;
 	height: 22px;
 	margin-top: 8px;
+	padding-right: 2px;
 }
 
+/* *****SEARCH BAR***** */
 .navbar__searchComponent {
 	display: flex;
+	flex: 1;
 }
 
 .navbar__searchBox {
@@ -68,14 +74,6 @@
 	margin: 13px; /*Centre icon*/
 }
 
-.navbar__searchIconBox {
-	background-color: #febe68;
-	height: 44px;
-	width: 48px;
-	border-radius: 0 5px 5px 0;
-	margin-top: 9px;
-}
-
 select {
 	width: 211px;
 	height: 45px;
@@ -85,6 +83,15 @@ select {
 	text-align-last: center;
 }
 
+.navbar__searchIconBox {
+	background-color: #febe68;
+	height: 44px;
+	width: 48px;
+	border-radius: 0 5px 5px 0;
+	margin-top: 9px;
+}
+
+/* *****NAV OPTIONS & CART***** */
 .navbar__options {
 	color: white;
 	display: flex;
@@ -96,8 +103,11 @@ select {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	margin: 0 2px 5px 0;
 }
 
+.navbar__signInOption {
+}
 .cart__itemCount {
 	color: #f08804;
 	font-weight: 700;
