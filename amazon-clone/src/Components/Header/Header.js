@@ -100,10 +100,10 @@ function Header() {
 					<span className="header__optionLineOne">Retours</span>
 					<span className="header__optionLineTwo">et commandes</span>
 				</div>
-				<div className="header__options Basket">
-					<span className="header__optionLineOne">
+				<div className="header__optionsBasket">
+					<span className="header__optionLineOne header__basketCount-container">
+						<span className="header__basketCount">0</span>
 						<div className="basket__icon"></div>
-						<div className="basket__item">0</div>
 					</span>
 					<span className="header__optionLineTwo">Panier</span>
 				</div>

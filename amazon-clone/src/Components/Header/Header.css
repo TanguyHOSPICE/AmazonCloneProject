@@ -9,12 +9,12 @@
 }
 
 .header__optionLineOne {
-	font-size: 13px;
+	font-size: 12px;
 	color: white;
 }
 
 .header__optionLineTwo {
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 700;
 	color: white;
 }
@@ -40,7 +40,7 @@
 .header__localisation {
 	display: flex;
 	align-items: center;
-	margin-right: 35px;
+	margin-right: 5px;
 }
 
 .header__locator {
@@ -67,10 +67,6 @@
 	flex: 1;
 }
 
-.header__search > div {
-	width: 178px;
-}
-
 #searchDropdownBox {
 	background-color: #f3f3f3;
 	text-align: center;
@@ -82,7 +78,7 @@
 }
 
 .header__inputSearch {
-	width: 361px;
+	width: 434px;
 }
 
 .header__searchIcon {
@@ -90,4 +86,53 @@
 	height: 45px;
 	background-color: #febd69;
 	border-radius: 0 5px 5px 0;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.header__options {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.header__optionsBasket {
+	display: flex;
+	align-items: center;
+	margin: 0px 11px 0px 2px;
+}
+
+.header__optionsBasket > header__optionLineOne {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 43px;
+	height: 20px;
+}
+
+.header__optionsBasket > header__optionLineTwo {
+	display: flex;
+	align-items: flex-end;
+}
+
+.header__basketCount {
+	position: relative;
+	left: 20px;
+	top: 15px;
+	right: auto;
+	font-weight: 700;
+	font-size: 16px;
+	color: #f08805;
+}
+
+.basket__icon {
+	background: url('https://ik.imagekit.io/amazon9876/amazon-image/amazon-image/sprite_350x_ZbMRQcQKu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664275312426')
+		no-repeat -217px -336px;
+	width: 43px;
+	height: 30px;
 }
