@@ -7,3 +7,22 @@
 	top: 0;
 	z-index: 100;
 }
+
+.header__amazon {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	margin: 0px 20px;
+}
+
+.header__logo {
+	width: 100px;
+	object-fit: contain; /*Keep ratio*/
+	margin-top: 18px;
+}
+
+.header__country {
+	font-size: 14px;
+	color: white;
+	padding-top: 5px;
+}
