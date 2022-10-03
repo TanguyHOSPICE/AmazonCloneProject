@@ -62,3 +62,18 @@
 .header__optionsLocator > header__optionLineOne {
 	font-weight: 200;
 }
+
+.header__search {
+	display: flex;
+	flex: 1;
+}
+
+#searchDropdownBox {
+	background-color: #f3f3f3;
+	text-align: center;
+	height: 40px;
+	width: 227px;
+	border-radius: 5px 0 0px 5px;
+	color: #785555;
+	line-height: 35px;
+}
