@@ -1,0 +1,64 @@
+.header {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	background-color: #131921;
+	/* position: sticky; */
+	top: 0;
+	z-index: 100;
+}
+
+.header__optionLineOne {
+	font-size: 13px;
+	color: white;
+}
+
+.header__optionLineTwo {
+	font-size: 15px;
+	font-weight: 700;
+	color: white;
+}
+
+.header__amazon {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	margin: 0px 20px;
+}
+
+.header__logo {
+	width: 100px;
+	object-fit: contain; /*Keep ratio*/
+	margin-top: 18px;
+}
+
+.header__country {
+	font-size: 14px;
+	color: white;
+	padding-top: 5px;
+}
+
+.header__localisation {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.header__locator {
+	background: url('https://ik.imagekit.io/amazon9876/amazon-image/amazon-image/sprite_350x_ZbMRQcQKu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664275312426')
+		no-repeat -70px -305px;
+	width: 19px;
+	height: 22px;
+	margin-top: 10px;
+}
+
+.header__optionsLocator {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	margin-left: 4px;
+}
+
+.header__optionsLocator > header__optionLineOne {
+	font-weight: 200;
+}
