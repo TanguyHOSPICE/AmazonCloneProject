@@ -5,10 +5,12 @@ import SearchIcon from '@mui/icons-material/Search';
 function Header() {
 	return (
 		<div className="header">
-			<div className="header__amazon">
-				<img className="header__logo" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon logo" />
-				{/* TODO:Make country dynamic */}
-				<p className="header__country">.fr</p>
+			<div className="header__logoContainer">
+				<div className="header__logo">
+					<img className="header__logoImg" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon logo" />
+					{/* TODO:Make country dynamic */}
+					<span className="header__country">.fr</span>
+				</div>
 			</div>
 
 			{/* TODO:Make localisation dynamic */}
@@ -93,7 +95,7 @@ function Header() {
 					<span className="header__optionLineOne">Bonjour,Identifiez-vous</span>
 					<span className="header__optionLineTwo">
 						Compte et listes
-						{/* TODO:Add Narrow */}
+						{/* TODO:Add span Narrow */}
 					</span>
 				</div>
 				<div className="header__options">

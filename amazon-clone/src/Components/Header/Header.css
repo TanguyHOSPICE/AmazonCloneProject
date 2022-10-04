@@ -19,24 +19,33 @@
 	color: white;
 }
 
-.header__amazon {
+/* **********Logo*********** */
+.header__logoContainer {
 	display: flex;
 	align-items: center;
-	margin: 0px 20px;
+	margin-left: 1px;
+	padding: 4px;
 }
 
 .header__logo {
-	width: 100px;
+	display: flex;
+	align-items: center;
+}
+
+.header__logoImg {
 	object-fit: contain; /*Keep ratio*/
-	margin-top: 18px;
+	margin-top: 12px;
+	height: 30px;
 }
 
 .header__country {
-	font-size: 14px;
+	font-size: 12px;
 	color: white;
-	padding-top: 5px;
+	margin-top: 12px;
+	height: 30px;
 }
 
+/* **********Localisation*********** */
 .header__localisation {
 	display: flex;
 	align-items: center;
@@ -62,6 +71,7 @@
 	font-weight: 200;
 }
 
+/* **********Search*********** */
 .header__search {
 	display: flex;
 	flex: 1;
@@ -88,6 +98,7 @@
 	border-radius: 0 5px 5px 0;
 }
 
+/* **********Nav*********** */
 .header__nav {
 	display: flex;
 	justify-content: space-evenly;
@@ -101,6 +112,7 @@
 	margin-right: 5px;
 }
 
+/* **********Basket*********** */
 .header__optionsBasket {
 	display: flex;
 	align-items: center;
