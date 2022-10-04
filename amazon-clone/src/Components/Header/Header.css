@@ -46,13 +46,27 @@
 }
 
 /* **********Localisation*********** */
-.header__localisation {
+.header__localisationContainer {
 	display: flex;
 	align-items: center;
 	margin-right: 5px;
+	width: 169px;
+	height: 51px;
 }
 
-.header__locator {
+.header__optionsLocator {
+	display: flex;
+	height: 30px;
+}
+
+.header__locatorIconBox {
+	display: flex;
+	justify-content: flex-end;
+	height: 51px;
+	width: 35px;
+}
+
+.header__locatorIcon {
 	background: url('https://ik.imagekit.io/amazon9876/amazon-image/amazon-image/sprite_350x_ZbMRQcQKu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664275312426')
 		no-repeat -70px -305px;
 	width: 19px;
@@ -60,15 +74,21 @@
 	margin-top: 10px;
 }
 
-.header__optionsLocator {
-	color: white;
+.header__optionsLocatorRight {
 	display: flex;
 	flex-direction: column;
-	margin-left: 4px;
+	height: 51px;
+	width: 144px;
 }
 
-.header__optionsLocator > header__optionLineOne {
+.header__optionsLocatorRight > .header__optionLineOne {
 	font-weight: 200;
+}
+
+.header__optionsLocatorRight > .header__optionLineTwo {
+	font-weight: 700;
+	display: flex;
+	align-items: flex-start;
 }
 
 /* **********Search*********** */
@@ -108,6 +128,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: flex-start;
 	margin-left: 5px;
 	margin-right: 5px;
 }
