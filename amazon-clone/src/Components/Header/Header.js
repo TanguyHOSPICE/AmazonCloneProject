@@ -40,7 +40,7 @@ function Header() {
 						title="Rechercher dans"
 					>
 						<option selected="selected" value="search-alias=aps">
-							Toutes nos catégories
+							<span className="aps">Toutes nos catégories</span>
 						</option>
 						<option value="search-alias=alexa-skills">Alexa Skills</option>
 						<option value="search-alias=amazon-global-store">Amazon Global Store</option>
@@ -88,7 +88,6 @@ function Header() {
 						<option value="search-alias=digital-music">Téléchargement de musique</option>
 						<option value="search-alias=clothing">Vêtements et accessoires</option>
 					</select>
-					{/* TODO:Add Narrow */}
 				</div>
 				<input className="header__inputSearch" type="text" />
 				<SearchIcon className="header__searchIcon" />
