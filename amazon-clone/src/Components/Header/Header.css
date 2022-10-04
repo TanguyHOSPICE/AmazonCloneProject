@@ -57,20 +57,22 @@
 .header__optionsLocator {
 	display: flex;
 	height: 30px;
+	/* width: 133px; */
+	padding: 0 10px;
 }
 
 .header__locatorIconBox {
 	display: flex;
 	justify-content: flex-end;
-	height: 51px;
-	width: 35px;
+	height: 30px;
+	width: 16px;
 }
 
 .header__locatorIcon {
 	background: url('https://ik.imagekit.io/amazon9876/amazon-image/amazon-image/sprite_350x_ZbMRQcQKu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664275312426')
-		no-repeat -70px -305px;
-	width: 19px;
-	height: 22px;
+		no-repeat -70px -378px;
+	width: 16px;
+	height: 18px;
 	margin-top: 10px;
 }
 
@@ -78,17 +80,24 @@
 	display: flex;
 	flex-direction: column;
 	height: 51px;
-	width: 144px;
+	width: 133px;
+	margin-left: 2px;
+	line-height: 15px;
 }
 
 .header__optionsLocatorRight > .header__optionLineOne {
 	font-weight: 200;
+	display: flex;
+	align-items: flex-end;
+	width: 133px;
+	color: #c6c4c7;
 }
 
 .header__optionsLocatorRight > .header__optionLineTwo {
-	font-weight: 700;
+	font-weight: 600;
 	display: flex;
 	align-items: flex-start;
+	width: 133px;
 }
 
 /* **********Search*********** */
