@@ -94,19 +94,19 @@ function Header() {
 			</div>
 
 			<div className="header__nav">
-				<div className="header__options">
+				<div className="header__options signIn">
 					<span className="header__optionLineOne">Bonjour,Identifiez-vous</span>
 					<span className="header__optionLineTwo">
 						Compte et listes
 						{/* TODO:Add span Narrow */}
 					</span>
 				</div>
-				<div className="header__options">
+				<div className="header__options returns">
 					<span className="header__optionLineOne">Retours</span>
 					<span className="header__optionLineTwo">et commandes</span>
 				</div>
-				<div className="header__optionsBasket">
-					<span className="header__optionLineOne header__basketCount-container">
+				<div className="header__options basket">
+					<span className="header__optionLineOne basket_container">
 						<span className="header__basketCount">0</span>
 						<div className="basket__icon"></div>
 					</span>
