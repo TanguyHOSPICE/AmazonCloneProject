@@ -1,17 +1,12 @@
 import React from 'react';
 import './Home.css';
+import Ad from '../Banners/Ad';
 
 function Home() {
 	return (
 		<div>
 			<div className="home">
-				<div className="home__head">
-					<div className="home__banner">
-						<img src="" alt="" className="home__image" />
-						<img src="" alt="" className="home__image" />
-						<img src="" alt="" className="home__image" />
-					</div>
-				</div>
+				<Ad />
 				<div className="home__main">
 					<div className="home__row">
 						{/* Product */}
