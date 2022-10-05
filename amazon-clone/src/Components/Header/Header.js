@@ -106,7 +106,7 @@ function Header() {
 					<span className="header__optionLineTwo">et commandes</span>
 				</div>
 				<div className="header__options basket">
-					<span className="header__optionLineOne basket_container">
+					<span className="header__optionLineOne">
 						<span className="header__basketCount">0</span>
 						<div className="basket__icon"></div>
 					</span>
