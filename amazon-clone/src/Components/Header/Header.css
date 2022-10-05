@@ -6,88 +6,206 @@
 	/* position: sticky; */
 	top: 0;
 	z-index: 100;
+	width: 100vw;
 }
 
 .header__optionLineOne {
-	font-size: 13px;
+	font-size: 10px;
 	color: white;
 }
 
 .header__optionLineTwo {
-	font-size: 15px;
-	font-weight: 700;
+	font-size: 13px;
+	font-weight: 800;
 	color: white;
 }
 
-.header__amazon {
+/* **********Logo*********** */
+.header__logoContainer {
 	display: flex;
 	align-items: center;
-	margin: 0px 20px;
+	margin-left: 1px;
+	padding: 4px;
 }
 
 .header__logo {
-	width: 100px;
+	display: flex;
+	align-items: center;
+}
+
+.header__logoImg {
 	object-fit: contain; /*Keep ratio*/
-	margin-top: 18px;
+	margin-top: 12px;
+	height: 30px;
 }
 
 .header__country {
-	font-size: 14px;
+	font-size: 12px;
 	color: white;
-	padding-top: 5px;
+	margin-top: 12px;
+	height: 30px;
 }
 
-.header__localisation {
+/* **********Localisation*********** */
+.header__localisationContainer {
 	display: flex;
 	align-items: center;
-	margin-right: 35px;
-}
-
-.header__locator {
-	background: url('https://ik.imagekit.io/amazon9876/amazon-image/amazon-image/sprite_350x_ZbMRQcQKu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664275312426')
-		no-repeat -70px -305px;
-	width: 19px;
-	height: 22px;
-	margin-top: 10px;
+	margin-right: 5px;
+	width: 169px;
+	height: 51px;
 }
 
 .header__optionsLocator {
-	color: white;
+	display: flex;
+	height: 30px;
+	/* width: 133px; */
+	padding: 0 10px;
+}
+
+.header__locatorIconBox {
+	display: flex;
+	justify-content: flex-end;
+	height: 30px;
+	width: 16px;
+}
+
+.header__locatorIcon {
+	background: url('https://ik.imagekit.io/amazon9876/amazon-image/amazon-image/sprite_350x_ZbMRQcQKu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664275312426')
+		no-repeat -70px -378px;
+	width: 16px;
+	height: 18px;
+	margin-top: 10px;
+}
+
+.header__optionsLocatorRight {
 	display: flex;
 	flex-direction: column;
-	margin-left: 4px;
+	height: 51px;
+	width: 133px;
+	margin-left: 2px;
+	line-height: 15px;
 }
 
-.header__optionsLocator > header__optionLineOne {
+.header__optionsLocatorRight > .header__optionLineOne {
 	font-weight: 200;
+	display: flex;
+	align-items: flex-end;
+	width: 133px;
+	color: #c6c4c7;
 }
 
+.header__optionsLocatorRight > .header__optionLineTwo {
+	font-weight: 600;
+	display: flex;
+	align-items: flex-start;
+	width: 133px;
+}
+
+/* **********Search*********** */
 .header__search {
 	display: flex;
 	flex: 1;
-}
-
-.header__search > div {
-	width: 178px;
 }
 
 #searchDropdownBox {
 	background-color: #f3f3f3;
 	text-align: center;
 	height: 35px;
-	width: 100%;
+	width: 151px;
 	border-radius: 5px 0 0px 5px;
-	color: #785555;
 	line-height: 35px;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #555;
+	font-size: 12px;
+	line-height: 33px;
+	margin-left: 5px;
+	min-width: 19px;
 }
 
 .header__inputSearch {
-	width: 361px;
+	width: 100%;
+	min-width: 175px;
+	max-width: 434px;
+	outline: none;
 }
 
 .header__searchIcon {
+	/* ?Don't even found solution size of the box*/
+	margin-top: 1px;
 	padding: 5px;
-	height: 45px;
+	height: 22px !important;
 	background-color: #febd69;
 	border-radius: 0 5px 5px 0;
+}
+
+/* **********Nav*********** */
+.header__nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.header__options {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	max-width: 121px;
+
+	min-width: 113px;
+	height: 50px;
+	padding: 10px 4px 10px;
+}
+
+.signIn {
+	margin-left: 10px;
+}
+
+.returns {
+	height: 50px;
+}
+
+.returns > .header__optionLineTwo {
+	width: 113px;
+}
+
+/* **********Basket*********** */
+.basket {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin: 0px 11px 8px 0px;
+	padding: 0px 9px 11px 0px;
+	width: 80px;
+	height: 50px;
+}
+
+.header__basketCount {
+	position: relative;
+	left: 20px;
+	top: 15px;
+	right: auto;
+	font-weight: 700;
+	font-size: 16px;
+	color: #f08805;
+}
+
+.basket__icon {
+	background: url('https://ik.imagekit.io/amazon9876/amazon-image/amazon-image/sprite_350x_ZbMRQcQKu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664275312426')
+		no-repeat -9px -339px;
+	width: 40px;
+	height: 28px;
+}
+
+.basket > .header__optionLineOne {
+	align-items: flex-end;
+	margin-top: auto;
+}
+
+.basket > .header__optionLineTwo {
+	align-items: flex-end;
+	margin-top: auto;
 }
