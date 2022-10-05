@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
+import Navbar__footer from './Navbar__footer';
 
 function Header() {
 	return (
@@ -113,6 +114,9 @@ function Header() {
 					<span className="header__optionLineTwo">Panier</span>
 				</div>
 			</div>
+			<>
+				<Navbar__footer />
+			</>
 		</div>
 	);
 }
