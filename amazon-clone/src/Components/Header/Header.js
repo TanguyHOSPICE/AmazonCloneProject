@@ -5,19 +5,25 @@ import SearchIcon from '@mui/icons-material/Search';
 function Header() {
 	return (
 		<div className="header">
-			<div className="header__amazon">
-				<img className="header__logo" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon logo" />
-				{/* TODO:Make country dynamic */}
-				<p className="header__country">.fr</p>
+			<div className="header__logoContainer">
+				<div className="header__logo">
+					<img className="header__logoImg" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon logo" />
+					{/* TODO:Make country dynamic */}
+					<span className="header__country">.fr</span>
+				</div>
 			</div>
 
 			{/* TODO:Make localisation dynamic */}
-			<div className="header__localisation">
-				<div className="header__locator"></div>
-				{/* Or make the header__locator like the header__logo made w/ a img */}
+			<div className="header__localisationContainer">
 				<div className="header__optionsLocator">
-					<span className="header__optionLineOne">Bonjour</span>
-					<span className="header__optionLineTwo">Entrez votre adresse</span>
+					<div className="header__locatorIconBox">
+						<div className="header__locatorIcon"></div>
+					</div>
+					{/* Or make the header__locator like the header__logo made w/ a img */}
+					<div className="header__optionsLocatorRight">
+						<span className="header__optionLineOne">Bonjour</span>
+						<span className="header__optionLineTwo">Entrez votre adresse</span>
+					</div>
 				</div>
 			</div>
 
@@ -34,7 +40,7 @@ function Header() {
 						title="Rechercher dans"
 					>
 						<option selected="selected" value="search-alias=aps">
-							Toutes nos catégories
+							<span className="aps">Toutes nos catégories</span>
 						</option>
 						<option value="search-alias=alexa-skills">Alexa Skills</option>
 						<option value="search-alias=amazon-global-store">Amazon Global Store</option>
@@ -82,28 +88,27 @@ function Header() {
 						<option value="search-alias=digital-music">Téléchargement de musique</option>
 						<option value="search-alias=clothing">Vêtements et accessoires</option>
 					</select>
-					{/* TODO:Add Narrow */}
 				</div>
 				<input className="header__inputSearch" type="text" />
 				<SearchIcon className="header__searchIcon" />
 			</div>
 
 			<div className="header__nav">
-				<div className="header__options">
+				<div className="header__options signIn">
 					<span className="header__optionLineOne">Bonjour,Identifiez-vous</span>
 					<span className="header__optionLineTwo">
 						Compte et listes
-						{/* TODO:Add Narrow */}
+						{/* TODO:Add span Narrow */}
 					</span>
 				</div>
-				<div className="header__options">
+				<div className="header__options returns">
 					<span className="header__optionLineOne">Retours</span>
 					<span className="header__optionLineTwo">et commandes</span>
 				</div>
-				<div className="header__options Basket">
-					<span className="header__optionLineOne">
+				<div className="header__options basket">
+					<span className="header__optionLineOne basket_container">
+						<span className="header__basketCount">0</span>
 						<div className="basket__icon"></div>
-						<div className="basket__item">0</div>
 					</span>
 					<span className="header__optionLineTwo">Panier</span>
 				</div>
