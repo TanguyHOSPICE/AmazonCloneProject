@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Ad from '../Banners/Ad';
+import Product from '../Products/Product';
 
 function Home() {
 	return (
@@ -9,7 +10,7 @@ function Home() {
 				<Ad />
 				<div className="home__main">
 					<div className="home__row">
-						{/* Product */}
+						<Product />
 						{/* Product */}
 						{/* Product */}
 						{/* SignInCard */}
