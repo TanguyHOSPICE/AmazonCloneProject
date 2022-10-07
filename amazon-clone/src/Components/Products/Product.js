@@ -13,12 +13,12 @@ function Product() {
 						{/* <strong>${price}</strong> */}
 					</p>
 					<div className="product__rating">
-						<p></p>
+						<p>{/* star */}</p>
 					</div>
-					{/* <img src="" alt="" /> */}
-					<button>Ajouter au panier</button>
 				</div>
+				<img src="" alt="" />
 			</div>
+			<button>Ajouter au panier</button>
 		</div>
 	);
 }
