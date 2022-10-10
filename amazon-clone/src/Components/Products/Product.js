@@ -1,24 +1,29 @@
 import React from 'react';
 import './Product.css';
+import StarIcon from '@mui/icons-material/Star';
 
-function Product() {
+// Add props to customize each product
+function Product({ title, image, price, rating }) {
 	return (
 		<div className="product">
+			<img src={image} alt="Product" />
 			<div className="product__info">
-				<div className="product__price">
-					<p>titre + descriptif</p>
-					<p className="product__price">
-						<small>€</small>
-						<strong>11,99</strong>
-						{/* <strong>${price}</strong> */}
-					</p>
-					<div className="product__rating">
-						<p>{/* star */}</p>
-					</div>
+				<p>{title}</p>
+				<p className="product__price">
+					<small>€</small>
+					<strong>{price}</strong>
+				</p>
+				<div className="product__rating">
+					{Array(rating)
+						.fill()
+						.map((_, i) => (
+							<p>
+								<StarIcon className="star" />
+							</p>
+						))}
 				</div>
-				<img src="" alt="" />
+				<button>Ajouter au panier</button>
 			</div>
-			<button>Ajouter au panier</button>
 		</div>
 	);
 }
